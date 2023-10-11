@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 50px;
+  border: rgb(186, 185, 185) solid 1px;
+  background-color: white;
+}
+#SignIn {
+  display: grid;
+  grid-column: 1;
+  border-bottom: gray solid 3px;
+}
+#CreateA {
+  display: grid;
+  grid-column: 2;
+  border-bottom: rgb(0, 0, 0) solid 3px;
+}
+.formContainer h2 {
+  text-align: center;
+}
+.formContainer form {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-column: 1 / span 2;
+}
+button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 50px;
+  width: 400px;
+  padding: 15px;
+  color: grey;
+}
+.facebook {
+  background-color: rgba(34, 85, 166, 0.877);
+  color: white;
+  margin-top: 20px;
+  background-image: url(data:image/png;base64,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);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 60px;
+}
+.send {
+  background-color: black;
+  color: white;
+}
+.email {
+  grid-column: 1;
+}
+#password {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFaqQ0g99Ew8HIX7JwYtPW8RF7Y47NGDVHaw&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 24px;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-color: grey;
+}
+h4 {
+  font-size: 14px;
+}
+textarea {
+  height: 200px;
+}
+
+.formContainer > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+}
+h6 {
+  color: grey;
+  font-size: 14px;
+}
+label {
+  display: flex;
+  align-items: center;
+}
+label input[type="radio"] {
+  order: 1;
+}
+label span {
+  order: 2;
+}
+/*select{
+    appearance: none;
+    background-image: url(svg bild);
+    background- reapeat: no-repeat;
+    background-position: right 4px center(för att ge den en position) ;
+}  Enbart ifall option knappen inte funkar efter att padding har laggts till*/
